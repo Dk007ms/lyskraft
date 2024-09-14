@@ -1,0 +1,11 @@
+/* styles.css */
+
+
+.image-container {
+  clip-path: ellipse(70% 80% at 50% 50%);
+  -webkit-clip-path: ellipse(70% 80% at 50% 50%); /* Fallback for WebKit browsers */
+}
+
+.delivery {
+  background-image: url("../../public/assets/maskGroupHomePage.png");
+}
