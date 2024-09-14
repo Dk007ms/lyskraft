@@ -12,6 +12,7 @@ import "../styles/home.css"
 import WeeklyDrops from "./weeklyDrops";
 import CoyuAssurance from "./coyuAssurance";
 import ShopByCategories from "./shopByCategory";
+import VideoShoppingPromo from "./shopVideoCall";
 
 const Homepage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -104,11 +105,12 @@ const Homepage = () => {
         <WeeklyDrops />
         <CoyuAssurance/>
         <ShopByCategories/>
+        <VideoShoppingPromo/>
       </section>
 
       <div className="fixed bottom-0 w-screen">
         {/* Express Delivery Banner */}
-        <div className="delivery bg-[#F3F3F3] py-2 px-4 mx-6 -mt-2 flex items-center justify-center gap-1">
+        <div className="delivery bg-[#F3F3F3] py-2 px-4 mx-4 -mt-2 flex items-center justify-center gap-1">
           <Truck size={16} className="text-[#393AFB] mr-2" />
           <span className="text-sm font-medium">
             90 MINUTES EXPRESS DELIVERY

@@ -2,12 +2,24 @@ import React from "react";
 import { ChevronRight } from "lucide-react";
 
 const categories = [
-  { name: "Topwear", image: "/assets/shopByCategory/image1.png" },
-  { name: "Bottomwear", image: "/assets/shopByCategory/image2.png" },
-  { name: "Dresses", image: "/assets/shopByCategory/image3.png" },
-  { name: "Co-ord Sets", image: "/assets/shopByCategory/image4.png" },
-  { name: "Jackets", image: "/assets/shopByCategory/image5.png" },
-  { name: "Jeans", image: "/assets/shopByCategory/image6.png" },
+  {
+    name: "Topwear",
+    name2: "Bottomwear",
+    image: "/assets/shopByCategory/image1.png",
+  },
+  { name: "Dresses", name2: "", image: "/assets/shopByCategory/image2.png" },
+  {
+    name: "Co-ord Sets",
+    name2: "",
+    image: "/assets/shopByCategory/image3.png",
+  },
+  {
+    name: "Jackets",
+    name2: "Jeans",
+    image: "/assets/shopByCategory/image4.png",
+  },
+  { name: "Bags", name2: "", image: "/assets/shopByCategory/image5.png" },
+  { name: "Jewellery", name2: "", image: "/assets/shopByCategory/image6.png" },
 ];
 
 const ShopByCategories = () => {
@@ -30,8 +42,12 @@ const ShopByCategories = () => {
             alt={categories[0].name}
             className="w-full h-full object-cover rounded-tl-lg"
           />
-          <div className="absolute bottom-2 left-2 text-white text-sm font-semibold">
+          <div className="absolute top-2 left-2 text-white text-sm font-semibold">
             {categories[0].name}
+          </div>
+          <div className="absolute top-1/2 left-0 w-full h-[2px] bg-white z-10"></div>
+          <div className="absolute bottom-2 left-2 text-white text-sm font-semibold">
+            {categories[0].name2}
           </div>
         </div>
         <div className="col-span-1 row-span-2 relative">
@@ -59,15 +75,19 @@ const ShopByCategories = () => {
                   : ""
               }`}
             />
+            <div className="absolute top-2 left-2 text-white text-sm font-semibold">
+              {index === 1 ? category.name : category.name2}
+            </div>
+            {index === 1 ? (
+              <div className="absolute top-1/2 left-0 w-full h-[2px] bg-white z-10"></div>
+            ) : (
+              ""
+            )}
             <div className="absolute bottom-2 left-2 text-white text-sm font-semibold">
-              {category.name}
+              {index === 1 ? category.name2 : category.name}
             </div>
           </div>
         ))}
-
-        {/* Dividers between sections
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[2px] h-full bg-white z-10"></div>
-        <div className="absolute top-1/2 left-0 w-full h-[2px] bg-white z-10"></div> */}
       </div>
     </div>
   );
