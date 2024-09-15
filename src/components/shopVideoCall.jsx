@@ -11,7 +11,7 @@ const VideoShoppingPromo = () => {
       <div className="shopVideoCall">
         <div className="relative aspect-video mb-4">
           <img
-            src="/assets/shopVideocall/videoCallStore.png"
+            src="/assets/shopVideoCall/videoCallStore.png"
             alt="Store stylist showing clothes"
             className="w-full h-full object-cover rounded-md"
           />
