@@ -18,6 +18,9 @@ import BestsellersSection from "./bestSellers";
 import StoreLocations from "./stores";
 import StoreEvents from "./storeEvents";
 import InstagramFeed from "./instaProd";
+import WhatsAppPrompt from "./helpComponent";
+import EmailSignupForm from "./earlyAccess";
+import Footer from "./homeFooter";
 
 const Homepage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -49,7 +52,7 @@ const Homepage = () => {
   }
 
   return (
-    <div className="font-['Hanken_Grotesk'] bg-white h-full overflow-scroll w-full max-w-md mx-auto flex flex-col">
+    <div className="font-['Hanken_Grotesk'] bg-white h-full mb-20 overflow-scroll overflow-x-clip w-full max-w-md mx-auto flex flex-col">
       {/* Header */}
       <header className="px-4 py-4 flex justify-between items-center">
         <Menu size={24} />
@@ -106,20 +109,22 @@ const Homepage = () => {
         </div>
       </main>
 
-      <section>
+      <section className="">
         <WeeklyDrops />
-        <CoyuAssurance/>
-        <ShopByCategories/>
-        <VideoShoppingPromo/>
-        <BrandShowcase/>
-        <BestsellersSection/>
-        <StoreLocations/>
-        <StoreEvents/>
-        <InstagramFeed/>
-        <StoreEvents/>
+        <CoyuAssurance />
+        <ShopByCategories />
+        <VideoShoppingPromo />
+        <BrandShowcase />
+        <BestsellersSection />
+        <StoreLocations />
+        <StoreEvents />
+        <InstagramFeed />
+        <WhatsAppPrompt />
+        <EmailSignupForm />
+        <Footer />
       </section>
 
-      <div className="fixed bottom-0 w-screen">
+      <div className="fixed bottom-0 w-full max-w-md">
         {/* Express Delivery Banner */}
         <div className="delivery bg-[#F3F3F3] py-2 px-4 mx-4 -mt-2 flex items-center justify-center gap-1">
           <Truck size={16} className="text-[#393AFB] mr-2" />

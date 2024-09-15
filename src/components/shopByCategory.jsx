@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const categories = [
   {
@@ -29,7 +29,7 @@ const ShopByCategories = () => {
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-bold">SHOP BY CATEGORIES</h2>
         <a href="#" className="text-blue-600 text-sm flex items-center">
-          VIEW ALL <ChevronRight size={16} />
+          VIEW ALL <ArrowRight size={16} />
         </a>
       </div>
 
