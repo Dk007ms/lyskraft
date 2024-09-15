@@ -3,7 +3,7 @@ import { Phone, MessageCircle } from "lucide-react";
 
 const VideoShoppingPromo = () => {
   return (
-    <div className="max-w-md mx-auto p-4 rounded-lg shadow-md">
+    <div className="max-w-md mx-auto p-4 rounded-lg my-8">
       <h1 className="text-md font-bold text-left mb-4">
         SHOP FROM OUR STORE VIA VIDEO CALL
       </h1>

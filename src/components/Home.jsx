@@ -13,6 +13,11 @@ import WeeklyDrops from "./weeklyDrops";
 import CoyuAssurance from "./coyuAssurance";
 import ShopByCategories from "./shopByCategory";
 import VideoShoppingPromo from "./shopVideoCall";
+import BrandShowcase from "./brandsSections";
+import BestsellersSection from "./bestSellers";
+import StoreLocations from "./stores";
+import StoreEvents from "./storeEvents";
+import InstagramFeed from "./instaProd";
 
 const Homepage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -106,6 +111,12 @@ const Homepage = () => {
         <CoyuAssurance/>
         <ShopByCategories/>
         <VideoShoppingPromo/>
+        <BrandShowcase/>
+        <BestsellersSection/>
+        <StoreLocations/>
+        <StoreEvents/>
+        <InstagramFeed/>
+        <StoreEvents/>
       </section>
 
       <div className="fixed bottom-0 w-screen">

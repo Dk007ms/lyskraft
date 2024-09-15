@@ -1,0 +1,31 @@
+@keyframes slideRow1 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px); /* Moves left by 50px */
+  }
+  100% {
+    transform: translateX(0); /* Returns to initial position */
+  }
+}
+
+@keyframes slideRow2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px); /* Moves right by 50px */
+  }
+  100% {
+    transform: translateX(0); /* Returns to initial position */
+  }
+}
+
+.animate-slideRow1 {
+  animation: slideRow1 8s ease-in-out infinite alternate;
+}
+
+.animate-slideRow2 {
+  animation: slideRow2 8s ease-in-out infinite alternate;
+}

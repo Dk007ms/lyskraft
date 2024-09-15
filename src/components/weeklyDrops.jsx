@@ -38,7 +38,7 @@ const WeeklyDrops = () => {
   ];
 
   return (
-    <div className="font-sans max-w-md mx-auto p-4 relative h-full">
+    <div className="font-sans max-w-md mx-auto my-8 p-4 relative h-full">
       <div className="mb-4">
         <div className="flex justify-between items-center mb-2">
           <h2 className="text-lg font-bold">FRESH DROPS OF THE WEEK</h2>
@@ -85,11 +85,10 @@ const WeeklyDrops = () => {
           </div>
         ))}
       </div>
-
-      <div className="bg-gray-100 p-4 rounded-lg">
-        <h3 className="text-sm font-semibold mb-2">
-          GET NEW DROPS & OFFERS ON WHATSAPP
-        </h3>
+      <h3 className="text-sm font-semibold mb-2 mt-8">
+        GET NEW DROPS & OFFERS ON WHATSAPP
+      </h3>
+      <div className="bg-[#F3F4FF] p-4 py-8 rounded-lg flex flex-col ">
         <div className="flex items-center">
           <div className="flex-1 mr-2">
             <input

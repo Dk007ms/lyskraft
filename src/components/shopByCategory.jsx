@@ -24,7 +24,7 @@ const categories = [
 
 const ShopByCategories = () => {
   return (
-    <div className="font-sans max-w-md mx-auto p-4 bg-white relative">
+    <div className="font-sans max-w-md mx-auto my-8 p-4 bg-white relative">
       {/* Title and View All link */}
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-bold">SHOP BY CATEGORIES</h2>

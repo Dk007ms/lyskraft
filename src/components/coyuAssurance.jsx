@@ -25,7 +25,7 @@ const CoyuAssurance = () => {
   ];
 
   return (
-    <div className="font-sans max-w-md mx-auto p-4">
+    <div className="font-sans max-w-md mx-auto p-4 my-8">
       {/* Title and Subheading */}
       <div className="text-left mb-4">
         <h3 className="font-bold text-lg">COYU ASSURANCE</h3>
