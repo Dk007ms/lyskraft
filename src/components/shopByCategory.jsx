@@ -45,7 +45,7 @@ const ShopByCategories = () => {
           <div className="absolute top-2 left-2 text-white text-sm font-semibold">
             {categories[0].name}
           </div>
-          <div className="absolute top-1/2 left-0 w-full h-[2px] bg-white z-10"></div>
+          <div className="absolute top-1/2 left-0 w-full h-[2px] bg-white z-0"></div>
           <div className="absolute bottom-2 left-2 text-white text-sm font-semibold">
             {categories[0].name2}
           </div>
@@ -79,7 +79,7 @@ const ShopByCategories = () => {
               {index === 1 ? category.name : category.name2}
             </div>
             {index === 1 ? (
-              <div className="absolute top-1/2 left-0 w-full h-[2px] bg-white z-10"></div>
+              <div className="absolute top-1/2 left-0 w-full h-[2px] bg-white z-0"></div>
             ) : (
               ""
             )}

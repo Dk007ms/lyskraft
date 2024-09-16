@@ -33,7 +33,7 @@ const BrandShowcase = () => {
             alt="ellipse"
             className="absolute top-4 w-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto"
           />
-          <h3 className="text-5xl font-serif mb-4 text-[#3132EB] relative z-10">
+          <h3 className="text-5xl font-serif mb-4 text-[#3132EB] relative z-0">
             Curated for you
           </h3>
           <img
